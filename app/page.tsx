@@ -7,7 +7,8 @@ import {
 } from 'lucide-react';
 
 export default function DraLuzLanding() {
-  const WHATSAPP_NUMBER = "573000000000"; // Reemplaza con el real
+  // NÚMERO ACTUALIZADO PARA WEBZIO
+  const WHATSAPP_NUMBER = "573046335166"; 
   const DIRECCION_EXACTA = "Edificio fábrica de sonrisas, Cl. 48 #26-94, Suroccidente, Barranquilla, Atlántico";
   
   const socialLinks = {
@@ -39,7 +40,6 @@ export default function DraLuzLanding() {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
   };
 
-  // Variantes para animaciones de entrada elegantes al hacer scroll
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -128,7 +128,7 @@ export default function DraLuzLanding() {
         </div>
       </section>
 
-      {/* SECCIÓN SERVICIOS CON MOVIMIENTOS ELEGANTES */}
+      {/* SECCIÓN SERVICIOS */}
       <motion.section 
         id="servicios" 
         initial="hidden"
@@ -162,9 +162,8 @@ export default function DraLuzLanding() {
         </div>
       </motion.section>
 
-      {/* SECCIÓN RESULTADOS CON FONDO ANIMADO Y MOVIMIENTOS */}
+      {/* SECCIÓN RESULTADOS */}
       <section id="resultados" className="py-32 overflow-hidden relative min-h-[700px] flex flex-col items-center justify-center">
-        {/* FONDO ANIMADO TAMBIEN AQUÍ */}
         <div className="absolute inset-0 z-0">
           <AnimatePresence mode="wait">
             <motion.img 
@@ -212,7 +211,7 @@ export default function DraLuzLanding() {
         </div>
       </section>
 
-      {/* FOOTER CON ENTRADA */}
+      {/* FOOTER */}
       <motion.footer 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -236,7 +235,7 @@ export default function DraLuzLanding() {
                     <a href={socialLinks.threads} target="_blank" className="p-3 bg-gray-50 rounded-full text-[#b2945e] hover:bg-[#b2945e] hover:text-white transition-all shadow-sm flex items-center justify-center font-serif font-bold">@</a>
                 </div>
                 <p className="mt-6 flex items-center gap-2 text-gray-700 text-sm font-bold">
-                    <Phone size={16} className="text-[#b2945e]"/> +57 300 000 0000
+                    <Phone size={16} className="text-[#b2945e]"/> +57 304 633 5166
                 </p>
             </div>
 
